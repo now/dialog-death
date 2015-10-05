@@ -50,6 +50,7 @@ reload_settings()
       titles := titles[%i%][texts][%j%][text]
 
       iniread titles[%i%][texts][%j%][action], %ini%, %section%, Action%j%, %default_action%
+      iniread titles[%i%][texts][%j%][always], %ini%, %section%, Always%j%, 0
 
       j := j + 1
     }
